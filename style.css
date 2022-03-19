@@ -1,0 +1,130 @@
+* {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    background-color: #607d8b;
+}
+
+body.fat {
+    background: url(img/bg.jpg) no-repeat;
+    background-size: cover;
+}
+
+body.slim {
+    background: url(img/bg2.jpg) no-repeat;
+    background-size: cover;
+}
+
+.header h1 {
+    font-size: 25px;
+}
+
+.container {
+    padding: 30px;
+    background-color: #ffffffcf;
+    box-shadow: 0px 4px 5px #00000030;
+    border-radius: 7px;
+    width: 420px;
+    max-width: 100%;
+    position: absolute;
+    top: 15%;
+}
+
+#mic label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#mic input {
+    width: 97%;
+    margin-bottom: 15px;
+    padding: 5px;
+    font-size: 15px;
+    color: #4caf50;
+    font-weight: 600;
+}
+
+button.calc {
+    background-color: #4caf50;
+    border: none;
+    padding: 10px 20px;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button.calc:hover {
+    background-color: #43dc49;
+}
+
+button.reset {
+    background-color: #ff5722;
+    border: none;
+    padding: 10px 20px;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+button.reset:hover {
+    background-color: #f97b53;
+}
+
+#result {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#masa {
+    font-size: 1.5em;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 3px;
+}
+
+#result.bad {
+    background-color: #ff5722;
+    color: white;
+    padding: 20px;
+}
+
+#result.bad::before {
+    display: block;
+    content: "O no!";
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#result.fine {
+    background-color: #43dc49;
+    color: white;
+    padding: 20px;
+}
+
+#result.fine::before {
+    display: block;
+    content: "Vamos todavia!";
+    font-size: 30px;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+
+    body {
+        background: url(#);
+    }
+
+    .container {
+        max-width: 80%;
+        box-shadow: none;
+    }
+}

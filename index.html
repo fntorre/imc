@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins:wght@100;400;600&family=Ubuntu:wght@300&display=swap"
+        rel="stylesheet">
+    <link href="./style.css" rel="stylesheet" type="text/css">
+    <title>App Peso</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Calculadora de IMC</h1>
+        </div>
+        <form id="mic">
+            <label for="nombre">Nombre: </label>
+            <input type="text" id="nombre" required> <br>
+            <label for="peso">Peso: </label>
+            <input type="number" id="peso" placeholder="Colocar peso en kg." required> <br>
+            <label for="altura">Altura: </label>
+            <input type="number" id="altura" placeholder="Colocar altura en cm." required> <br>
+            <button type="button" class="calc" onclick="calcular()">
+                Calcular
+            </button>
+
+            <button type="button" class="reset" onclick="resetear()">
+                Resetear
+            </button>
+        </form>
+        <div id="result">
+            <div id="masa">
+
+            </div>
+            <div id="frase">
+
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./script.js"></script>
+
+</html>
