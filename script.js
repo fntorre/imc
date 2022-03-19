@@ -20,7 +20,7 @@ function calcular() {
 }
 
 function validarInput() {
-  document.getElementById("btn_validar").disabled = !document.getElementById("quanti").value.length;
+  document.getElementById("btn_validar").disabled = !document.getElementById("peso").value.length;
 }
 
 function resetear() {
