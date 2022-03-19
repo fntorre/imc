@@ -1,5 +1,5 @@
 function calcular() {
-validarInput()
+document.getElementById("btn_validar").disabled
     let nombre = document.getElementById("nombre").value;
     let peso = document.getElementById("peso").value;
     let altura = document.getElementById("altura").value;
