@@ -120,7 +120,7 @@ button.reset:hover {
 @media (max-width: 768px) {
 
     body {
-        background: url(#);
+        background-color: #607d8b;
     }
 
     .container {
