@@ -1,5 +1,5 @@
 function calcular() {
-document.getElementById("btn_validar").disabled
+  document.getElementById("btn_validar").disabled = !document.getElementById("peso").value.length;
     let nombre = document.getElementById("nombre").value;
     let peso = document.getElementById("peso").value;
     let altura = document.getElementById("altura").value;
@@ -18,10 +18,6 @@ document.getElementById("btn_validar").disabled
         resultContent.classList.add('fine');
         document.body.classList.add('slim')
     }
-}
-
-function validarInput() {
-  document.getElementById("btn_validar").disabled = !document.getElementById("peso").value.length;
 }
 
 function resetear() {
