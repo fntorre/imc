@@ -19,6 +19,10 @@ function calcular() {
     }
 }
 
+function validarInput() {
+  document.getElementById("btn_Validar").disabled = !document.getElementById("quanti").value.length;
+}
+
 function resetear() {
     location.reload()
 }
