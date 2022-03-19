@@ -17,6 +17,7 @@ function calcular() {
         resultContent.classList.add('fine');
         document.body.classList.add('slim')
     }
+event.stopPropagation()
 }
 
 function resetear() {
