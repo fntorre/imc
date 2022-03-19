@@ -117,6 +117,14 @@ button.reset:hover {
     font-weight: bold;
 }
 
+p.alert {
+    background-color: yellow;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: #ffc800;
+}
+
 @media (max-width: 768px) {
 
     body {
