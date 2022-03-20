@@ -12,11 +12,11 @@ function calcular() {
         if (resultado >= 25) {
             document.getElementById("frase").innerHTML = `${nombre} estas con sobrepeso.`;
             resultContent.classList.add('bad');
-            // document.body.classList.add('fat') esto cambia la imagen de fondo
+            document.body.classList.add('fat')
         } else {
             document.getElementById("frase").innerHTML = `${nombre} estas bien de peso.`;
             resultContent.classList.add('fine');
-            // document.body.classList.add('slim') esto cambia la imagen de fondo
+            document.body.classList.add('slim')
         }
     }
     else {
